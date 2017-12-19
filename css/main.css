@@ -1,0 +1,28 @@
+.text_center{
+	text-align: center;
+}
+
+.home_header{
+	text-align: center;
+	font-size: 100px;
+}
+
+.header{
+	text-align: center;
+	font-size: 50px;
+}
+
+.img{
+	height: 25px;
+	width: 25px;
+}
+
+.al_right{
+	text-align: right;
+}
+
+.bordered{
+	border:1px solid #ccc;
+	padding: 10px;
+	border-radius: 10px;
+}
