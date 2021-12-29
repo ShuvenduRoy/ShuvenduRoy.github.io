@@ -1,0 +1,13 @@
+output/
+logger/
+checkpoints/
+work_dirs/
+data/
+__pycache__/
+.idea/
+temp/
+*.dat
+*.out
+*.err
+ablation_studies/
+datasets/
