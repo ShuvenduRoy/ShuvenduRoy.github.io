@@ -1,378 +1,827 @@
-<html>
+<!DOCTYPE html>
+<html class=" js " lang="en">
 <head>
-    <title>Shuvendu Roy</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="Project_CVcss/main.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"> <!-- begin SEO --><title>Shuvendu Roy</title>
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="Shuvendu Roy">
+    <meta property="og:title" content="Shuvendu Roy">
+    <link rel="canonical" href="https://shuvenduroy.github.io/">
+    <meta property="og:url" content="https://shuvenduroy.github.io/">
+    <meta property="og:description" content="About me">
+    <script async="" src="backend/analytics.js"></script>
+    <script type="application/ld+json"> {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Your Name",
+        "url": "https://shuvenduroy.github.io",
+        "sameAs": null
+    } </script> <!-- end SEO -->
+    <link href="css/font_awesome.css" rel="stylesheet">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script> <!-- For all browsers -->
+    <link rel="stylesheet" href="backend/main.css">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="backend/academicons.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/x-mathjax-config;executed=true"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+    <script type="text/x-mathjax-config;executed=true"> MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); </script>
+    <script src="backend/latest.js" async=""></script> <!-- end custom head snippets -->
+    <style id="fit-vids-style">.fluid-width-video-wrapper {
+        width: 100%;
+        position: relative;
+        padding: 0;
+    }
+
+    .fluid-width-video-wrapper iframe, .fluid-width-video-wrapper object, .fluid-width-video-wrapper embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }</style>
+    <script type="text/javascript" async="" src="backend/MathJax.js"></script>
+    <style type="text/css">.MathJax_Hover_Frame {
+        border-radius: .25em;
+        -webkit-border-radius: .25em;
+        -moz-border-radius: .25em;
+        -khtml-border-radius: .25em;
+        box-shadow: 0px 0px 15px #83A;
+        -webkit-box-shadow: 0px 0px 15px #83A;
+        -moz-box-shadow: 0px 0px 15px #83A;
+        -khtml-box-shadow: 0px 0px 15px #83A;
+        border: 1px solid #A6D ! important;
+        display: inline-block;
+        position: absolute
+    }
+
+    .MathJax_Menu_Button .MathJax_Hover_Arrow {
+        position: absolute;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #AAA;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        font-family: 'Courier New', Courier;
+        font-size: 9px;
+        color: #F0F0F0
+    }
+
+    .MathJax_Menu_Button .MathJax_Hover_Arrow span {
+        display: block;
+        background-color: #AAA;
+        border: 1px solid;
+        border-radius: 3px;
+        line-height: 0;
+        padding: 4px
+    }
+
+    .MathJax_Hover_Arrow:hover {
+        color: white !important;
+        border: 2px solid #CCC !important
+    }
+
+    .MathJax_Hover_Arrow:hover span {
+        background-color: #CCC !important
+    }
+    </style>
+    <style type="text/css">#MathJax_About {
+        position: fixed;
+        left: 50%;
+        width: auto;
+        text-align: center;
+        border: 3px outset;
+        padding: 1em 2em;
+        background-color: #DDDDDD;
+        color: black;
+        cursor: default;
+        font-family: message-box;
+        font-size: 120%;
+        font-style: normal;
+        text-indent: 0;
+        text-transform: none;
+        line-height: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        z-index: 201;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -khtml-border-radius: 15px;
+        box-shadow: 0px 10px 20px #808080;
+        -webkit-box-shadow: 0px 10px 20px #808080;
+        -moz-box-shadow: 0px 10px 20px #808080;
+        -khtml-box-shadow: 0px 10px 20px #808080;
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+    }
+
+    #MathJax_About.MathJax_MousePost {
+        outline: none
+    }
+
+    .MathJax_Menu {
+        position: absolute;
+        background-color: white;
+        color: black;
+        width: auto;
+        padding: 2px;
+        border: 1px solid #CCCCCC;
+        margin: 0;
+        cursor: default;
+        font: menu;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        line-height: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        z-index: 201;
+        box-shadow: 0px 10px 20px #808080;
+        -webkit-box-shadow: 0px 10px 20px #808080;
+        -moz-box-shadow: 0px 10px 20px #808080;
+        -khtml-box-shadow: 0px 10px 20px #808080;
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+    }
+
+    .MathJax_MenuItem {
+        padding: 2px 2em;
+        background: transparent
+    }
+
+    .MathJax_MenuArrow {
+        position: absolute;
+        right: .5em;
+        padding-top: .25em;
+        color: #666666;
+        font-size: .75em
+    }
+
+    .MathJax_MenuActive .MathJax_MenuArrow {
+        color: white
+    }
+
+    .MathJax_MenuArrow.RTL {
+        left: .5em;
+        right: auto
+    }
+
+    .MathJax_MenuCheck {
+        position: absolute;
+        left: .7em
+    }
+
+    .MathJax_MenuCheck.RTL {
+        right: .7em;
+        left: auto
+    }
+
+    .MathJax_MenuRadioCheck {
+        position: absolute;
+        left: 1em
+    }
+
+    .MathJax_MenuRadioCheck.RTL {
+        right: 1em;
+        left: auto
+    }
+
+    .MathJax_MenuLabel {
+        padding: 2px 2em 4px 1.33em;
+        font-style: italic
+    }
+
+    .MathJax_MenuRule {
+        border-top: 1px solid #CCCCCC;
+        margin: 4px 1px 0px
+    }
+
+    .MathJax_MenuDisabled {
+        color: GrayText
+    }
+
+    .MathJax_MenuActive {
+        background-color: Highlight;
+        color: HighlightText
+    }
+
+    .MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {
+        background-color: #E8E8E8
+    }
+
+    .MathJax_ContextMenu:focus {
+        outline: none
+    }
+
+    .MathJax_ContextMenu .MathJax_MenuItem:focus {
+        outline: none
+    }
+
+    #MathJax_AboutClose {
+        top: .2em;
+        right: .2em
+    }
+
+    .MathJax_Menu .MathJax_MenuClose {
+        top: -10px;
+        left: -10px
+    }
+
+    .MathJax_MenuClose {
+        position: absolute;
+        cursor: pointer;
+        display: inline-block;
+        border: 2px solid #AAA;
+        border-radius: 18px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        -khtml-border-radius: 18px;
+        font-family: 'Courier New', Courier;
+        font-size: 24px;
+        color: #F0F0F0
+    }
+
+    .MathJax_MenuClose span {
+        display: block;
+        background-color: #AAA;
+        border: 1.5px solid;
+        border-radius: 18px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        -khtml-border-radius: 18px;
+        line-height: 0;
+        padding: 8px 0 6px
+    }
+
+    .MathJax_MenuClose:hover {
+        color: white !important;
+        border: 2px solid #CCC !important
+    }
+
+    .MathJax_MenuClose:hover span {
+        background-color: #CCC !important
+    }
+
+    .MathJax_MenuClose:hover:focus {
+        outline: none
+    }
+    </style>
+    <style type="text/css">.MathJax_Preview .MJXf-math {
+        color: inherit !important
+    }
+    </style>
+    <style type="text/css">.MJX_Assistive_MathML {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 1px 0 0 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden !important;
+        display: block !important;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none
+    }
+
+    .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+        width: 100% !important
+    }
+    </style>
+    <style type="text/css">#MathJax_Zoom {
+        position: absolute;
+        background-color: #F0F0F0;
+        overflow: auto;
+        display: block;
+        z-index: 301;
+        padding: .5em;
+        border: 1px solid black;
+        margin: 0;
+        font-weight: normal;
+        font-style: normal;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        line-height: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        float: none;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        box-shadow: 5px 5px 15px #AAAAAA;
+        -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+        -moz-box-shadow: 5px 5px 15px #AAAAAA;
+        -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+    }
+
+    #MathJax_ZoomOverlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 300;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        opacity: 0;
+        filter: alpha(opacity=0)
+    }
+
+    #MathJax_ZoomFrame {
+        position: relative;
+        display: inline-block;
+        height: 0;
+        width: 0
+    }
+
+    #MathJax_ZoomEventTrap {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 302;
+        display: inline-block;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        opacity: 0;
+        filter: alpha(opacity=0)
+    }
+    </style>
+    <style type="text/css">.MathJax_Preview {
+        color: #888
+    }
+
+    #MathJax_Message {
+        position: fixed;
+        left: 1px;
+        bottom: 2px;
+        background-color: #E6E6E6;
+        border: 1px solid #959595;
+        margin: 0px;
+        padding: 2px 8px;
+        z-index: 102;
+        color: black;
+        font-size: 80%;
+        width: auto;
+        white-space: nowrap
+    }
+
+    #MathJax_MSIE_Frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        z-index: 101;
+        border: 0px;
+        margin: 0px;
+        padding: 0px
+    }
+
+    .MathJax_Error {
+        color: #CC0000;
+        font-style: italic
+    }
+    </style>
+    <style type="text/css">.MJXp-script {
+        font-size: .8em
+    }
+
+    .MJXp-right {
+        -webkit-transform-origin: right;
+        -moz-transform-origin: right;
+        -ms-transform-origin: right;
+        -o-transform-origin: right;
+        transform-origin: right
+    }
+
+    .MJXp-bold {
+        font-weight: bold
+    }
+
+    .MJXp-italic {
+        font-style: italic
+    }
+
+    .MJXp-scr {
+        font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+    }
+
+    .MJXp-frak {
+        font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+    }
+
+    .MJXp-sf {
+        font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+    }
+
+    .MJXp-cal {
+        font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+    }
+
+    .MJXp-mono {
+        font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+    }
+
+    .MJXp-largeop {
+        font-size: 150%
+    }
+
+    .MJXp-largeop.MJXp-int {
+        vertical-align: -.2em
+    }
+
+    .MJXp-math {
+        display: inline-block;
+        line-height: 1.2;
+        text-indent: 0;
+        font-family: 'Times New Roman', Times, STIXGeneral, serif;
+        white-space: nowrap;
+        border-collapse: collapse
+    }
+
+    .MJXp-display {
+        display: block;
+        text-align: center;
+        margin: 1em 0
+    }
+
+    .MJXp-math span {
+        display: inline-block
+    }
+
+    .MJXp-box {
+        display: block !important;
+        text-align: center
+    }
+
+    .MJXp-box:after {
+        content: " "
+    }
+
+    .MJXp-rule {
+        display: block !important;
+        margin-top: .1em
+    }
+
+    .MJXp-char {
+        display: block !important
+    }
+
+    .MJXp-mo {
+        margin: 0 .15em
+    }
+
+    .MJXp-mfrac {
+        margin: 0 .125em;
+        vertical-align: .25em
+    }
+
+    .MJXp-denom {
+        display: inline-table !important;
+        width: 100%
+    }
+
+    .MJXp-denom > * {
+        display: table-row !important
+    }
+
+    .MJXp-surd {
+        vertical-align: top
+    }
+
+    .MJXp-surd > * {
+        display: block !important
+    }
+
+    .MJXp-script-box > * {
+        display: table !important;
+        height: 50%
+    }
+
+    .MJXp-script-box > * > * {
+        display: table-cell !important;
+        vertical-align: top
+    }
+
+    .MJXp-script-box > *:last-child > * {
+        vertical-align: bottom
+    }
+
+    .MJXp-script-box > * > * > * {
+        display: block !important
+    }
+
+    .MJXp-mphantom {
+        visibility: hidden
+    }
+
+    .MJXp-munderover {
+        display: inline-table !important
+    }
+
+    .MJXp-over {
+        display: inline-block !important;
+        text-align: center
+    }
+
+    .MJXp-over > * {
+        display: block !important
+    }
+
+    .MJXp-munderover > * {
+        display: table-row !important
+    }
+
+    .MJXp-mtable {
+        vertical-align: .25em;
+        margin: 0 .125em
+    }
+
+    .MJXp-mtable > * {
+        display: inline-table !important;
+        vertical-align: middle
+    }
+
+    .MJXp-mtr {
+        display: table-row !important
+    }
+
+    .MJXp-mtd {
+        display: table-cell !important;
+        text-align: center;
+        padding: .5em 0 0 .5em
+    }
+
+    .MJXp-mtr > .MJXp-mtd:first-child {
+        padding-left: 0
+    }
+
+    .MJXp-mtr:first-child > .MJXp-mtd {
+        padding-top: 0
+    }
+
+    .MJXp-mlabeledtr {
+        display: table-row !important
+    }
+
+    .MJXp-mlabeledtr > .MJXp-mtd:first-child {
+        padding-left: 0
+    }
+
+    .MJXp-mlabeledtr:first-child > .MJXp-mtd {
+        padding-top: 0
+    }
+
+    .MJXp-merror {
+        background-color: #FFFF88;
+        color: #CC0000;
+        border: 1px solid #CC0000;
+        padding: 1px 3px;
+        font-style: normal;
+        font-size: 90%
+    }
+
+    .MJXp-scale0 {
+        -webkit-transform: scaleX(.0);
+        -moz-transform: scaleX(.0);
+        -ms-transform: scaleX(.0);
+        -o-transform: scaleX(.0);
+        transform: scaleX(.0)
+    }
+
+    .MJXp-scale1 {
+        -webkit-transform: scaleX(.1);
+        -moz-transform: scaleX(.1);
+        -ms-transform: scaleX(.1);
+        -o-transform: scaleX(.1);
+        transform: scaleX(.1)
+    }
+
+    .MJXp-scale2 {
+        -webkit-transform: scaleX(.2);
+        -moz-transform: scaleX(.2);
+        -ms-transform: scaleX(.2);
+        -o-transform: scaleX(.2);
+        transform: scaleX(.2)
+    }
+
+    .MJXp-scale3 {
+        -webkit-transform: scaleX(.3);
+        -moz-transform: scaleX(.3);
+        -ms-transform: scaleX(.3);
+        -o-transform: scaleX(.3);
+        transform: scaleX(.3)
+    }
+
+    .MJXp-scale4 {
+        -webkit-transform: scaleX(.4);
+        -moz-transform: scaleX(.4);
+        -ms-transform: scaleX(.4);
+        -o-transform: scaleX(.4);
+        transform: scaleX(.4)
+    }
+
+    .MJXp-scale5 {
+        -webkit-transform: scaleX(.5);
+        -moz-transform: scaleX(.5);
+        -ms-transform: scaleX(.5);
+        -o-transform: scaleX(.5);
+        transform: scaleX(.5)
+    }
+
+    .MJXp-scale6 {
+        -webkit-transform: scaleX(.6);
+        -moz-transform: scaleX(.6);
+        -ms-transform: scaleX(.6);
+        -o-transform: scaleX(.6);
+        transform: scaleX(.6)
+    }
+
+    .MJXp-scale7 {
+        -webkit-transform: scaleX(.7);
+        -moz-transform: scaleX(.7);
+        -ms-transform: scaleX(.7);
+        -o-transform: scaleX(.7);
+        transform: scaleX(.7)
+    }
+
+    .MJXp-scale8 {
+        -webkit-transform: scaleX(.8);
+        -moz-transform: scaleX(.8);
+        -ms-transform: scaleX(.8);
+        -o-transform: scaleX(.8);
+        transform: scaleX(.8)
+    }
+
+    .MJXp-scale9 {
+        -webkit-transform: scaleX(.9);
+        -moz-transform: scaleX(.9);
+        -ms-transform: scaleX(.9);
+        -o-transform: scaleX(.9);
+        transform: scaleX(.9)
+    }
+
+    .MathJax_PHTML .noError {
+        font-size: 90%;
+        text-align: left;
+        color: black;
+        padding: 1px 3px;
+        border: 1px solid
+    }
+    </style>
 </head>
-<body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-      <a class="navbar-brand" href="#">Shuvendu Roy</a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="https://shuvendubikash.github.io/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://shuvendubikash.github.io/me/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://shuvendubikash.github.io/blog/index.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://shuvendubikash.github.io/me/about_me.html">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://shuvendubikash.github.io/me/contact.html">Contact</a>
-          </li>
-
-
-        </ul>
-        <span class="navbar-text">
-            <a class="nav-link" href="https://github.com/ShuvenduBikash/">Go to github</a>
-        </span>
-      </div>
-    </nav>
-
-
-    <div class="container">
-         <h1 style="text-align:center">Shuvendu Roy Bikash</h1>
-         <p align="center" style="margin-top: -12px">
-             bikash.shuvendu@gmail.com
-
-         </p>
-        <h6 style = "text-align:center;">
-            <a href="https://github.com/ShuvenduBikash"><img class="img" src="img/git.png"> Github</a>
-            <a href="https://www.linkedin.com/in/shuvendu-roy-4a6936115/"><img class="img" src="img/linkedIn.png"> Linked In</a>
-            <a href="https://twitter.com/ShuvenduBikash"><img class="img" src="img/tweet.png"> Twitter</a>
-            <a href="https://www.facebook.com/bikash.shuvendu"><img class="img" src="img/fb.png"> Facebook</a>
-        </h6>
-        <hr>
-
-        
-        <h2>About me</h2>
-
-        <div class="container bordered">
-            <div class="media">
-              <div class="media-body">
-                
-                I am Shuvendu Roy Bikash. I am a student of Computer Science and Engineering at Khulna University of Engineering and technology, Khulna, Bangladesh<br><br>
-
-                I am interested in artificial intelligence. My field of study is deep learning and reinforcement learning
-              </div>
-              <img class="ml-3 rounded" src="img/me.jpeg" alt="Bangla_programming_language_B">
-            </div>
-            
+<body data-new-gr-c-s-check-loaded="8.892.0" data-gr-ext-installed="">
+<div id="MathJax_Message" style="display: none;"></div>
+<!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
+    experience.
+</div><![endif]-->
+<div class="masthead">
+    <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+            <nav id="site-nav" class="greedy-nav">
+                <button class="hidden" count="0">
+                    <div class="navicon"></div>
+                </button>
+                <ul class="visible-links">
+                    <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://shuvenduroy.github.io/">Shuvendu Roy</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/publications/">Publications</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/talks/">Talks</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/teaching/">Teaching</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/portfolio/">Portfolio</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/year-archive/">Blog Posts</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/cv/">CV</a></li>
+                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/markdown/">Guide</a></li>
+                </ul>
+                <ul class="hidden-links hidden"></ul>
+            </nav>
         </div>
-
-
-
-
-
-
-
-
-
-        <!-- Research and publications -->
-        <br><br>
-        <h2 align="center"><b>Research and Publications</b></h2>
-        <div class="container bordered" style="padding: 15px">
-
-            <!-- first paper -->
-            <div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body" style="border-radius: 0px">
-
-                <h5 class="mt-0 mb-1"></h5>
-                1. <b>Shuvendu Roy</b>, Sk. Imran Hossain, M. A. H. Akhand and N. Siddique, "<a href="https://ieeexplore.ieee.org/document/8660871">Sequence Modeling for Intelligent Typing Assistant with Bangla and English Keyboard</a>", <i>International Conference on Innovation in Engineering and Technology(ICIET)</i>, IEEE, Dhaka, Bangladesh, 27-28 Dec., 2018.
-
-
-              </div>
-            </div>
-
-
-
-			<div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body" style="border-radius: 0px">
-                <h5 class="mt-0 mb-1"></h5>
-                2. <b>Shuvendu Roy</b> and  Md. Sakif Rahman, "<a href="https://ieeexplore.ieee.org/document/8679295">Emergency Vehicle Detection on heavy traffic road from CCTV footage using Deep Neural Network</a>", <i>2<sup>nd</sup> International Conference on Electrical, Computer and Communication Engineering(ECCE)</i>, IEEE, Cox's Bazar, Bangladesh, 7-9Feb., 2019.
-
-
-              </div>
-            </div>
-
-
-            <div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                3. <b>Shuvendu Roy</b>, <b>"Improved Bangla Language Modeling with Convolution"</b>, <i>International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019)</i>, Dhaka, IEEE, Bangladesh, 5-7 May, 2019.
-
-              </div>
-            </div>
-			
-			
-			<div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                4. <b>Shuvendu Roy</b>, <b>"Generating Anime from Real Human Image with Adversarial Training"</b>, <i>International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019)</i>, Dhaka, IEEE, Bangladesh, 5-7 May, 2019.
-
-              </div>
-            </div>
-			
-			
-			<div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                5. <b>Shuvendu Roy</b>, <b>"Denoising Sequence-to-Sequence modeling for removing spelling mistakes"</b>, <i>International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019)</i>, Dhaka, IEEE, Bangladesh, 5-7 May, 2019.
-
-
-              </div>
-            </div>
-			
-			
-			<div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                6. <b>Shuvendu Roy</b> and Sneha Paul, <b>"Land-Use Detection Using Residual Convolutional Neural Network"</b>, <i>International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019)</i>, Dhaka, IEEE, Bangladesh, 5-7 May, 2019.
-
-
-              </div>
-            </div>
-			
-			
-			<div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                7. <b>Shuvendu Roy</b>, Md. Ijaj Sayim and M. A. H. Akhand <b>"Pathological Voice Classification Using Deep Learning"</b>, <i>International Conference on Advances in Science, Engineering and Robotics Technology (ICASERT-2019)</i>, Dhaka, IEEE, Bangladesh, 5-7 May, 2019.
-
-
-              </div>
-            </div>
-
-			
-			
-
-            <div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-<!--                 [Under review as a conference paper at IJCNN 2019] -->
-                <h5 class="mt-0 mb-1"></h5>
-                8. <b>Shuvendu Roy</b>, M. A. H. Akhand and N. Siddique, <b>"Synthesis of Facial Image using Conditional Generative Adversarial Network"</b>, in 5th International Conference on Computer, Communication, Chemical, Materials and Electronic Engineering, IEEE, Rajshahi, Bangladesh, July 11-12, 2019.
-
-
-              </div>
-            </div>
-
-            
-
-
-            <div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                9.  Md Ijaj Sayim, <b>Shuvendu Roy</b>, M. A. H. Akhand and N. Siddique, <b>"Human Age Prediction from Facial Image Using Deep Convolution Neural Networks"</b>, in International Joint Conference on Computational Intelligence(IJCCI), Springer Nature, Dhaka, Bangladesh, 25-26 Oct. 2019.
-
-              </div>
-            </div>
-
-
-			<div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                10. <b>Shuvendu Roy</b> and Ferdous Bin Ali, <b>"Unsupervised Context-Sensitive Bengali Spelling Correction with Character N-gram"</b>, under review as a conference paper in IEEE International Conference on Computer and Information Technology (ICCIT-2019)
-
-
-
-              </div>
-            </div>
-            
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-            <div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                11. <b>Shuvendu Roy</b>, <b>"Island Loss for Improving the Classification of Facial Attributes with Transfer Learning on Deep Convolutional Neural Network"</b>, in International Journal of Image, Graphics and Signal Processing 11.9 (2019) 
-              </div>
-            </div>
-
-
-
-
-
-            <div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                12. <b>Shuvendu Roy</b>, "<b>Applying Aging Effect on Facial Image with Conditional Generative Adversarial Network</b>", </b> in International Journal of Image, Graphics and Signal Processing 11.10 (2019) 
-
-              </div>
-            </div>
-
-
-            <div class="media" style="background: #f7f1fd; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                13. <b>Shuvendu Roy</b> and M. A. H. Akhand, <b>"Understanding Human Emotion from Facial Images using Transfer Learning on Deep Convolutional Neural Network"</b>, Under review as a Journal
-
-
-
-              </div>
-            </div>
-
-            
-			<div class="media" style="background: #d9e4f5; padding: 10px; border-radius: 0px">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"></h5>
-                14. Ferdous Bin Ali and <b>Shuvendu Roy</b>, <b>“An Unsupervised Approach of Open-Domain ChatBot”</b> under review as a conference paper in 22nd International Conference on Computer and Information Technology (ICCIT-2019), IEEE
-
-
-              </div>
-            </div>
-
-
-
-
-
-            
-
-        </div>
-        <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <br>
-        <h2 style="text-align:center"><b>Projects and works</b></h2>
-
-
-        <!-- Artificial intelligence -->
-        <div class="container bordered">
-            <h4>Deep learning and AI</h4>
-            <hr>
-
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/BanglaOCR">Bangla OCR</a></h5>
-                For the purpose of optical character recognizer here i have used keras with convolutional neural network. The dataset is an open sourse 84 class imageset by IIT. The classes include regular character with combined character. I tried various approach to handle the classification problem. I got an accuracy of 92% with this small dataset
-              </div>
-              <img class="ml-3" src="https://raw.githubusercontent.com/ShuvenduBikash/BanglaOCR/master/img/1.png" alt="Bangla_OCR">
-              
-            </div>
-
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Intelligent-Bangla-typing-assistant">Intelligent Bangla typing assistant</a></h5>
-                Artificially intelligent typing assistant that suggest the next word using user typing history and the full sentence using LSTM. Works with any environment (MS word, notepad, coding IDEs or anything). Detect the sentence you typing, suggest next word with help of LSTM trained on our typing history, gives multiple possible suggestions and full sentence (or phrase) suggestions. Allocated hotkey to get the meaning of any word in any environment, select any word and press ctrl+c+v. Automatically takes screenshots of your typing environment and parse the words or name written on that page and suggest accordingly
-              </div>
-            </div>
-
-            
-
-        </div>
-        <br>
-
-        <!-- System application -->
-        <div class="container bordered">
-            <h4>System applications</h4>
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Bangla_programming_language_B">Bangla Programming language (B)</a></h5>
-                An interpreted programming language to code with bangla language. Comes with its own IDE and use gcc compiler to compile. Written in python. It has C like systex and can beb integrated with C programming language
-              </div>
-              <img class="ml-3" src="img/ide.png" alt="Bangla_programming_language_B">
-            </div>
-        </div>
-        <br>
-
-        <!-- Mobile application -->
-        <div class="container bordered">
-            <h4>Mobile applications</h4>
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Kuet-Bus-Tracker">Bus Tracker</a></h5>
-                Android app to track bus specially designed for kuet bus tracking system
-
-                This app is to track anything but i specially designed it for kuet bus tracking system.And it works with ultimately high accuracy. The system is maintain with a client application which is inside the bus
-              </div>
-              <img class="ml-3" src="img/bus.png" alt="Bus tracker">
-            </div>
-
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Blood-Bank">Blood Bank</a></h5>
-                Android app connected to a database of the blood donor. The android app is a community between people who need blood and who are willing to donate blood. If you are willing to be a donor all you have to do is to go to the "Be a Donor page and fill the form the form will look like below. Here you have to provide Your name, city from the drop-down menu, your blood group and a mobile number to contact you. As soon as you become a donor anyone who is in your city and need the blood of your group can find you from "Need Blood" section. All he has to do is to select and required blood group and click "Continue". You can find the donors on the map. The green dot in the map is your position and the red dots the donors.
-              </div>
-              <img class="ml-3" src="img/bb.png" alt="Blood Bank">
-            </div>
-
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Student">Student</a></h5>
-                Student interaction with regular class activity
-
-                This app features some regualar important needs for a student. This functionality is online based. Most university have required attendence percentage to get in to the exam. so this is importanct to maintain the ittendence count. There is an online based upcoming event system. where anyone can add an event and all other mombers will be nontified about it
-              </div>
-              <img class="ml-3" src="img/student.png" alt="Student">
-            </div>            
-        </div>
-        <br>
-
-        <div class="container bordered">
-            <h4>Web applications</h4>
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/KuetOverflow">KuetOverflow</a></h5>
-                Web application for all requiremant for an university built in ASP.NET Core MVC<br><br>
-
-                It has a discussion section and question answering section. A social page for every student and teacher. Chat with members. Application to maintain all official activity and result
-              </div>
-            </div>
-        </div>
-        <br>
-
-        
-        <div class="container bordered">
-            <h4>Game Development</h4>
-            <hr>
-            <div class="media">
-              <div class="media-body">
-                <h5 class="mt-0 mb-1"><a href="https://github.com/ShuvenduBikash/Coin-Collector">Coin-Collector</a></h5>
-                Unity game project. A finite time runner game to maximize points with help of speed busters
-              </div>
-            </div>
-        </div>
-        <br>
-
-        
     </div>
+</div>
+<div id="main" role="main">
+    <div class="sidebar sticky">
+        <div itemscope="" itemtype="http://schema.org/Person">
+            <div class="author__avatar"><img src="img/me_2.jpg" class="author__avatar"
+                                             alt="Shuvendu Roy"></div>
+            <div class="author__content"><h3 class="author__name">Shuvendu Roy</h3>
+                <p class="author__bio">Graduate Research Assistant, Dept. ECE & Ingenuity Labs Research Institute, Queen's University, ON, Canada</p></div>
+            <div class="author__urls-wrapper">
+                <button class="btn btn--inverse">Follow</button>
+                <ul class="author__urls social-icons">
+                    <!--					<li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Location</li>-->
+                    <li><a href="https://twitter.com/ShuvenduBikash"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+                    <li><a href="https://github.com/ShuvenduRoy"><i class="fab fa-fw fa-github-square" aria-hidden="true"></i> Github</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=HCPv9toAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+                    <!--					<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>-->
+                    <!--					<li><a href="http://orcid.org/yourorcidurl"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>-->
+                    <li><a href="https://www.linkedin.com/in/shuvenduroy/"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="mailto:shuvendu.roy@queensu.ca"><i class="fas fa-fw  fa-envelope"></i>  Email</a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="academicpages is a ready-to-fork GitHub Pages template for academic personal websites">
+        <meta itemprop="description" content="About me">
+        <div class="page__inner-wrap">
+            <!--			<header><h1 class="page__title" itemprop="headline">Bio</h1></header>-->
+            <section class="page__content" itemprop="text">
+                <p align="justify" style="color:black">
+                    Hi! I'm Shuvendu Roy, a Graduate Student (MASC),
+                    focusing on Computer Vision and Deep Learning with special interest on Unsupervised learning (e.g. Self-supervised learning, and Semi-supervised learning),
+                    at <a href="https://www.aiimlab.com/"> Ambient Intelligence and Interactive Machines Laboratory (Aiim Lab)</a>
+                    and <a href="https://ingenuitylabs.queensu.ca/">Ingenuity Labs Research Institute</a>,
+                    <a href="https://www.queensu.ca/">Queen’s University</a>, Kingston, ON, Canada.
+                    I am very fortunate to be supervised by <a HREF="https://www.aiimlab.com/director">Prof. Ali Etemad</a>.
+                    <!--					My research focus in broadly centered around Computer Vision and Deep learning. -->
+                    <!--					In particular, I work on unsupervised learning, e.g. self-supervised and semi-supervised learning. -->
+                    My research goal is to explore intelligent methods with less reliance on large human-annotated dataset. My research also focus on the applications of deep learning in affective
+                    computing.
+                </p>
+
+                <p align="justify" style="color:black">
+                    A summary of my profile is as follows:
+                    Published in to tier conference and journals such as ACII, ICMI;
+                    Skilled in python and different machine learning libraries (Pytorch, Tensorflow, etc);
+                    Experienced in deep learning method and model designing, training and deployment.
+                    Four years of involvement in academic and industry research of machine learning methods.
+                    Previous job experiences in software, telecom companies on deep learning based projects.
+                </p>
+
+                <p align="center">
+                    <a href="mailto:shuvendu.roy@queensu.ca"><b>Email</b></a> &nbsp;|&nbsp;
+                    <a href="data/CV_Shuvendu_Roy.pdf" target="_blank"><b>CV</b></a> &nbsp;|&nbsp;
+                    <a href="https://scholar.google.com/citations?user=HCPv9toAAAAJ&hl=en"><b>Google Scholar</b></a> &nbsp;|&nbsp;
+                    <a href="https://www.linkedin.com/in/shuvenduroy/"><b>LinkedIn</b></a> &nbsp;|&nbsp;
+<!--                    <a href="https://www.researchgate.net/profile/Abdul-Muntakim-Rafi/publications">ResearchGate</a> &nbsp;|&nbsp;-->
+                    <a href="https://github.com/ShuvenduRoy"><b>Github</b></a>
+<!--					<a href="data/CV_of_Failure.pdf" target="_blank">CV of Failures</a>-->
+<!--					&nbsp;|&nbsp;-->
+                </p>
+
+
+                <!--				<h1 id="research_interest">Research Interests</h1>-->
+                <!--				<p align="justify"  style="color:black">-->
+                <!--					My research focus in broadly centered around Computer Vision and Deep learning. In particular, I work on unsupervised learning, e.g. self-supervised and semi-supervised learning. My research goal is to explore intelligent methods with less reliance on large dataset. My research also focus on the applications of deep learning in affective computing.-->
+                <!--				</p>-->
+                <hr>
+
+                <h1 style="margin-bottom: -0.5em">Recent Updates!</h1>
+
+                <p align="justify" >
+                    <ul class="my_list">
+                        <li> [Dec 2021] One paper accepted at AAAI'22 Workshop on Human-Centric Self-Supervised Learning </li>
+                        <li> [Aug 2021] One paper accepted at ICMI'21 </li>
+                        <li> [Jun 2021] My first paper during my master's degree got accepted at ACII'21 </li>
+                        <li> [Sep 2020] Started MASC at Queen's University </li>
+                    </ul>
+                </p>
+
+
+            </section>
+            <footer class="page__meta"></footer>
+        </div>
+    </article>
+</div>
+
+<script src="backend/main.js"></script>
+<script> (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', '', 'auto');
+ga('send', 'pageview'); </script>
 </body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>

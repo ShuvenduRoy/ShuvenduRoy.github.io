@@ -185,9 +185,7 @@ p {
     margin-bottom: 1.3em
 }
 
-.my_page{
-    color: red;
-}
+
 
 u, ins {
     text-decoration: none;
@@ -9189,4 +9187,18 @@ img.mfp-img {
     .masthead, .toc, .page__share, .page__related, .ads, .page__footer {
         display: none
     }
+}
+
+.my_list li{
+    margin: 0;
+    font-size: 0.9em;
+    margin-left: -1em;
+}
+
+.my_list {
+    margin-bottom: -1.3em;
+}
+
+.low_margin_bottom{
+    margin-bottom: -1.3em;
 }
