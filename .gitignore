@@ -2,7 +2,6 @@ output/
 logger/
 checkpoints/
 work_dirs/
-data/
 __pycache__/
 .idea/
 temp/
@@ -10,4 +9,3 @@ temp/
 *.out
 *.err
 ablation_studies/
-datasets/
