@@ -692,6 +692,16 @@
         border: 1px solid
     }
     </style>
+    <script src="backend/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#includeTop").load("topbar.html");
+        });
+        $(function () {
+            $("#includeSide").load("sidebar.html");
+        });
+    </script>
+
 </head>
 
 <body data-new-gr-c-s-check-loaded="8.892.0" data-gr-ext-installed="">
@@ -700,57 +710,16 @@
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your
     experience.
 </div><![endif]-->
-<div class="masthead">
-    <div class="masthead__inner-wrap">
-        <div class="masthead__menu">
-            <nav id="site-nav" class="greedy-nav">
-                <button class="hidden" count="0">
-                    <div class="navicon"></div>
-                </button>
-                <ul class="visible-links">
-                    <li class="masthead__menu-item masthead__menu-item--lg"><a href="https://shuvenduroy.github.io/">Shuvendu Roy</a></li>
-                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/research">Research</a></li>
-                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/publications">Publications</a></li>
-                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/experience">Experience</a></li>
-<!--                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/talks/">Talks</a></li>-->
-<!--                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/teaching/">Teaching</a></li>-->
-<!--                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/portfolio/">Portfolio</a></li>-->
-                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/cv">CV</a></li>
-                    <li class="masthead__menu-item"><a href="https://shuvenduroy.github.io/year-archive">Blog Posts</a></li>
-                </ul>
-                <ul class="hidden-links hidden"></ul>
-            </nav>
-        </div>
-    </div>
-</div>
-<div id="main" role="main">
-    <div class="sidebar sticky">
-        <div itemscope="" itemtype="http://schema.org/Person">
-            <div class="author__avatar"><img src="img/me_2.jpg" class="author__avatar"
-                                             alt="Shuvendu Roy"></div>
-            <div class="author__content"><h3 class="author__name">Shuvendu Roy</h3>
-                <p class="author__bio">Graduate Research Assistant, Dept. ECE & Ingenuity Labs Research Institute, Queen's University, ON, Canada</p></div>
-            <div class="author__urls-wrapper">
-                <button class="btn btn--inverse">Follow</button>
-                <ul class="author__urls social-icons">
-                    <!--					<li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Location</li>-->
-                    <li><a href="https://twitter.com/ShuvenduBikash"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-                    <li><a href="https://github.com/ShuvenduRoy"><i class="fab fa-fw fa-github-square" aria-hidden="true"></i> Github</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=HCPv9toAAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
-                    <!--					<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>-->
-                    <!--					<li><a href="http://orcid.org/yourorcidurl"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>-->
-                    <li><a href="https://www.linkedin.com/in/shuvenduroy/"><i class="fab fa-fw fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="mailto:shuvendu.roy@queensu.ca"><i class="fas fa-fw  fa-envelope"></i>  Email</a> </li>
 
-                </ul>
-            </div>
-        </div>
-    </div>
+<div id="includeTop"></div>
+
+<div id="main" role="main">
+    <div id="includeSide"></div>
     <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
         <meta itemprop="headline" content="Shuvendu Roy">
         <meta itemprop="description" content="About me">
         <div class="page__inner-wrap">
-<!--            <header><h1 class="page__title" itemprop="Shuvendu Roy">Bio</h1></header>-->
+            <!--            <header><h1 class="page__title" itemprop="Shuvendu Roy">Bio</h1></header>-->
             <section class="page__content" itemprop="text">
                 <p align="justify" style="color:black">
                     Hi! I'm Shuvendu Roy, a Graduate Student (MASC),
@@ -779,10 +748,10 @@
                     <a href="data/CV_Shuvendu_Roy.pdf" target="_blank"><b>CV</b></a> &nbsp;|&nbsp;
                     <a href="https://scholar.google.com/citations?user=HCPv9toAAAAJ&hl=en"><b>Google Scholar</b></a> &nbsp;|&nbsp;
                     <a href="https://www.linkedin.com/in/shuvenduroy/"><b>LinkedIn</b></a> &nbsp;|&nbsp;
-<!--                    <a href="https://www.researchgate.net/profile/Abdul-Muntakim-Rafi/publications">ResearchGate</a> &nbsp;|&nbsp;-->
+                    <!--                    <a href="https://www.researchgate.net/profile/Abdul-Muntakim-Rafi/publications">ResearchGate</a> &nbsp;|&nbsp;-->
                     <a href="https://github.com/ShuvenduRoy"><b>Github</b></a>
-<!--					<a href="data/CV_of_Failure.pdf" target="_blank">CV of Failures</a>-->
-<!--					&nbsp;|&nbsp;-->
+                    <!--					<a href="data/CV_of_Failure.pdf" target="_blank">CV of Failures</a>-->
+                    <!--					&nbsp;|&nbsp;-->
                 </p>
 
 
@@ -792,15 +761,15 @@
                 <!--				</p>-->
                 <hr>
 
-                <h1 style="margin-bottom: -0.5em">Recent Updates!</h1>
+                <h2 style="margin-bottom: -0.5em">Recent Updates!</h2>
 
-                <p align="justify" >
-                    <ul class="my_list">
-                        <li> [Dec 2021] One paper accepted at AAAI'22 Workshop on Human-Centric Self-Supervised Learning </li>
-                        <li> [Aug 2021] One paper accepted at ICMI'21 </li>
-                        <li> [Jun 2021] My first paper during my master's degree got accepted at ACII'21 </li>
-                        <li> [Sep 2020] Started MASC at Queen's University </li>
-                    </ul>
+                <p align="justify">
+                <ul class="my_list">
+                    <li> [Dec 2021] One paper accepted at AAAI'22 Workshop on Human-Centric Self-Supervised Learning</li>
+                    <li> [Aug 2021] One paper accepted at ICMI'21</li>
+                    <li> [Jun 2021] My first paper during my master's degree got accepted at ACII'21</li>
+                    <li> [Sep 2020] Started MASC at Queen's University</li>
+                </ul>
                 </p>
 
 
