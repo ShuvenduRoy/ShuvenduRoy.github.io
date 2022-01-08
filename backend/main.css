@@ -4,6 +4,8 @@ a:focus {
     outline-offset: -2px
 }
 
+
+
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -76,7 +78,7 @@ sub {
 }
 
 img {
-    max-width: 100%;
+    /*max-width: 100%;*/
     width: auto \9;
     height: auto;
     vertical-align: middle;
@@ -770,8 +772,8 @@ a.reversefootnote:hover {
 table {
     margin-bottom: 1em;
     width: 100%;
-    font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-    font-size: .75em;
+    /*font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;*/
+    font-size: .90em;
     border-collapse: collapse;
     border: 1px solid #bdc1c4
 }
@@ -795,7 +797,7 @@ th {
 td {
     padding: 0.5em;
     border-bottom: 1px solid #bdc1c4;
-    border-right: 1px solid #bdc1c4
+    /*border-right: 1px solid #bdc1c4*/
 }
 
 tr, td, th {

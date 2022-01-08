@@ -12,10 +12,6 @@
 	font-size: 50px;
 }
 
-.img{
-	height: 25px;
-	width: 25px;
-}
 
 .al_right{
 	text-align: right;
@@ -27,8 +23,21 @@
 	border-radius: 10px;
 }
 
+.hide {
+  display: none;
+}
 
-img{
-	height: 150px;
-	width: 150px;
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+
+.two {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
