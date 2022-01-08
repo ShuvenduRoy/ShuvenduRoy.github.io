@@ -1276,7 +1276,7 @@ tr, td, th {
 }
 
 .masthead__menu-item--lg {
-    padding-right: 2em;
+    padding-right: 3em;
     font-weight: 700
 }
 
@@ -2458,8 +2458,8 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
         width: 83.0508474576%;
         float: right;
         margin-right: 0;
-        padding-left: 4.2372881356%;
-        padding-right: 16.9491525424%
+        padding-left: 1%;
+        padding-right: 3%
     }
 }
 
