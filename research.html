@@ -723,6 +723,52 @@
                 <hr>
                 <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto; line-height: 1.3">
                     <tbody>
+
+
+                    <tr onmouseout="acii22_stop()" onmouseover="acii22_start()" bgcolor="#ffffff">
+                        <td style="width:25%; vertical-align:center">
+                            <div class="one">
+                                <div class="two" id='acii22_image'>
+                                    <img src="img/acii22.png" width="200">
+                                </div>
+                                <img src='img/acii22.png' width="200">
+                            </div>
+                            <script type="text/javascript">
+                                function acii22_start() {
+                                    document.getElementById('acii22_image').style.opacity = "1";
+                                    document.getElementById('acii2022').style.display = 'block';
+                                }
+
+                                function acii22_stop() {
+                                    document.getElementById('acii22_image').style.opacity = "0";
+                                    document.getElementById('acii2022').style.display = "none";
+                                }
+
+                                acii22_stop()
+                            </script>
+                        </td>
+                        <td style="width:75% ;vertical-align:top">
+                            <a href="https://dl.acm.org/doi/abs/10.1145/3462244.3479955" style="text-decoration: None">
+                                <strong>Analysis of Semi-Supervised Methods for Facial Expression Recognition</strong>
+                            </a>
+                            <br><br>
+                            <strong>Shuvendu Roy</strong>, Ali Etemad
+                            <br>
+                            IEEE International Conference on Affective Computing and Intelligent Interaction (ACII), 2022 <br>
+                            <br>
+
+                            <a style="text-decoration: None" href=" ">Paper</a> |
+                            <a style="text-decoration: None" href="https://shuvenduroy.github.io/SSL_FER/" target="_blank">Project Page</a> |
+                            <a style="text-decoration: None" href="https://github.com/ShuvenduRoy/SSL_FER" target="_blank">GitHub</a>
+                            <br><br>
+                            <p style="text-align: left; font-size: .90em;" class="hide" id="acii2022">
+                                Abstract:
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+
+
                     <tr onmouseout="icmi_stop()" onmouseover="icmi_start()" bgcolor="#ffffff">
                         <td style="width:25%; vertical-align:center">
                             <div class="one">
@@ -767,6 +813,8 @@
                             <br>
                         </td>
                     </tr>
+
+
 
 
                     <tr onmouseout="dense_stop()" onmouseover="dense_start()" bgcolor="#ffffff">
