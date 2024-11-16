@@ -821,13 +821,131 @@
                 </div>
 
 
-<!--                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
-
-
                 <header><h1 class="page__title" itemprop="headline"  ><i>Research</i></h1></header>
                 <section class="page__content" itemprop="text" id="research">
                 <table style="width:100%; border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto; line-height: 1.3">
                     <tbody>
+
+                    <tr onmouseout="acii23_stop()" onmouseover="acii23_start()" bgcolor="#ffffff">
+                        <td style="width:25%; vertical-align:center">
+                            <div class="one">
+                                <div class="two" id='acii23_image'>
+                                    <img src="img/acii23.png" width="200">
+                                </div>
+                                <img src='img/acii23.png' width="200">
+                            </div>
+                            <script type="text/javascript">
+                                function acii23_start() {
+                                    document.getElementById('acii23_image').style.opacity = "1";
+                                    document.getElementById('acii23').style.display = 'block';
+                                }
+
+                                function acii23_stop() {
+                                    document.getElementById('acii23_image').style.opacity = "0";
+                                    document.getElementById('acii23').style.display = "none";
+                                }
+
+                                acii23_stop()
+                            </script>
+                        </td>
+                        <td style="width:75% ;vertical-align:top">
+                            <a href="https://arxiv.org/abs/2307.02744" style="text-decoration: None">
+                                <strong>Active Learning with Contrastive Pre-training for Facial Expression Recognition</strong>
+                            </a>
+                            <br><br>
+                            <strong>Shuvendu Roy</strong>, Ali Etemad
+                            <br>
+                            11th International Conference on Affective Computing and Intelligent Interaction <b>ACII 2023</b> <br>
+                            <br>
+
+                            <a style="text-decoration: None" href="https://ieeexplore.ieee.org/abstract/document/10388093">Paper</a> |
+                            <a style="text-decoration: None" href="https://arxiv.org/pdf/2307.02744">ArVix</a>  |
+                            <a style="text-decoration: None" href="https://github.com/ShuvenduRoy/ActiveFER"><i class="fab fa-fw fa-github-square" aria-hidden="true"></i> Code</a>
+                            <br><br>
+                            <p style="text-align: left; font-size: .90em;" class="hide" id="acii23">
+                                Deep learning has played a significant role in the
+                                success of facial expression recognition (FER), thanks to large
+                                models and vast amounts of labelled data. However, obtaining
+                                labelled data requires a tremendous amount of human effort,
+                                time, and financial resources. Even though some prior works
+                                have focused on reducing the need for large amounts of labelled
+                                data using different unsupervised methods, another promising
+                                approach called active learning is barely explored in the context
+                                of FER. This approach involves selecting and labelling the most
+                                representative samples from an unlabelled set to make the best
+                                use of a limited ‘labelling budget’. In this paper, we implement
+                                and study 8 recent active learning methods on three public
+                                FER datasets, FER13, RAF-DB, and KDEF. Our findings show
+                                that existing active learning methods do not perform well in
+                                the context of FER, likely suffering from a phenomenon called
+                                ‘Cold Start’, which occurs when the initial set of labelled samples
+                                is not well representative of the entire dataset. To address this
+                                issue, we propose contrastive self-supervised pre-training, which
+                                first learns the underlying representations based on the entire
+                                unlabelled dataset. We then follow this with the active learning
+                                methods and observe that our 2-step approach shows up to 9.2%
+                                improvement over random sampling and up to 6.7% improvement over the best existing active learning baseline without the
+                                pre-training. We will make the code for this study public upon
+                                publication at: github.com/ShuvenduRoy/ActiveFER.
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+
+
+                    <tr onmouseout="icassp23_stop()" onmouseover="icassp23_start()" bgcolor="#ffffff">
+                        <td style="width:25%; vertical-align:center">
+                            <div class="one">
+                                <div class="two" id='icassp23_image'>
+                                    <img src="img/icassp23.png" width="200">
+                                </div>
+                                <img src='img/icassp23.png' width="200">
+                            </div>
+                            <script type="text/javascript">
+                                function icassp23_start() {
+                                    document.getElementById('icassp23_image').style.opacity = "1";
+                                    document.getElementById('icassp23').style.display = 'block';
+                                }
+
+                                function icassp23_stop() {
+                                    document.getElementById('icassp23_image').style.opacity = "0";
+                                    document.getElementById('icassp23').style.display = "none";
+                                }
+
+                                icassp23_stop()
+                            </script>
+                        </td>
+                        <td style="width:75% ;vertical-align:top">
+                            <a href="https://arxiv.org/abs/2209.00760" style="text-decoration: None">
+                                <strong>Temporal Contrastive Learning with Curriculum</strong>
+                            </a>
+                            <br><br>
+                            <strong>Shuvendu Roy</strong>, Ali Etemad
+                            <br>
+                            IEEE International Conference on Acoustics, Speech and Signal Processing, <b>ICASSP 2023</b> <br>
+                            <br>
+
+                            <a style="text-decoration: None" href="https://ieeexplore.ieee.org/abstract/document/10096811">Paper</a> |
+                            <a style="text-decoration: None" href="https://arxiv.org/pdf/2209.00760">ArVix</a>
+                            <br><br>
+                            <p style="text-align: left; font-size: .90em;" class="hide" id="icassp23">
+                                We present ConCur, a contrastive video representation learning method that uses curriculum learning
+                                to impose a dynamic sampling strategy in contrastive training. More specifically, ConCur starts the
+                                contrastive training with easy positive samples (temporally close and semantically similar clips),
+                                and as the training progresses, it increases the temporal span effectively sampling hard positives
+                                (temporally away and semantically dissimilar). To learn better context-aware representations, we also
+                                propose an auxiliary task of predicting the temporal distance between a positive pair of clips. We
+                                conduct extensive experiments on two popular action recognition datasets, UCF101 and HMDB51, on
+                                which our proposed method achieves state-of-the-art performance on two benchmark tasks of video
+                                action recognition and video retrieval. We explore the impact of encoder backbones and pre-training
+                                strategies by using R(2+1)D and C3D encoders and pre-training on Kinetics-400 and Kinetics-200
+                                datasets. Moreover, a detailed ablation study shows the effectiveness of each of the components of
+                                our proposed method.
+                            </p>
+                            <br>
+                        </td>
+                    </tr>
+
 
 
                     <tr onmouseout="acii22_stop()" onmouseover="acii22_start()" bgcolor="#ffffff">
@@ -907,7 +1025,7 @@
                             <br>
 
                             <a style="text-decoration: None" href="https://dl.acm.org/doi/abs/10.1145/3462244.3479955" target="_blank">Paper</a> |
-                            <a style="text-decoration: None" href="https://arxiv.org/abs/2108.06723" target="_blank">arXiv</a>
+                            <a style="text-decoration: None" href="https://arxiv.org/abs/2108.06723" target="_blank">ArXiv</a>
                             <br><br>
                             <p style="text-align: left; font-size: .90em;" class="hide" id="icmi2021">We propose Contrastive Learning of Multi-view facial Expressions (CL-MEx) to exploit facial images captured simultaneously from different angles towards FER. CL-MEx is a two-step training framework. In the first step, an encoder network is pre-trained with the proposed self-supervised contrastive loss, where it learns to generate view-invariant embeddings for different views of a subject. The model is then fine-tuned with labeled data in a supervised setting. We demonstrate the performance of the proposed method on two multi-view FER datasets, KDEF and DDCF, where state-of-the-art performances are achieved. Further experiments show the robustness of our method in dealing with challenging angles and reduced amounts of labeled data.</p>
                             <br>
@@ -951,7 +1069,7 @@
                             <br>
 
                             <a style="text-decoration: None" href="https://ieeexplore.ieee.org/abstract/document/9597460" target="_blank">Paper</a> |
-                            <a style="text-decoration: None" href="https://arxiv.org/abs/2108.03064" target="_blank">arXiv</a>
+                            <a style="text-decoration: None" href="https://arxiv.org/abs/2108.03064" target="_blank">ArXiv</a>
                             <br> <br>
 
                             <p style="text-align: left; font-size: .90em;" class="hide" id="acii_2021">We propose a self-supervised contrastive learning approach for facial expression recognition (FER) in videos. We propose a novel temporal sampling-based augmentation scheme to be utilized in addition to standard spatial augmentations used for contrastive learning. Our proposed temporal augmentation scheme randomly picks from one of three temporal sampling techniques: (1) pure random sampling, (2) uniform sampling, and (3) sequential sampling. This is followed by a combination of up to three standard spatial augmentations. We then use a deep R(2+1)D network for FER, which we train in a self-supervised fashion based on the augmentations and subsequently fine-tune.</p>
@@ -1019,8 +1137,9 @@
 <!--                        <a href="https://publons.com/researcher/4948440/shuvendu-roy/">Publons Profile</a>-->
 <!--                </p>-->
                 <ol class="three">
-                    <li>Computer Vision and Pattern Recognition (CVPR-23)</li>
-                    <li>European Conference on Computer Vision (ECCV), 2022</li>
+                    <li>Computer Vision and Pattern Recognition (CVPR), 2023, 2024</li>
+                    <li>European Conference on Computer Vision (ECCV), 2022, 20024</li>
+                    <li>European Conference on Learning Representations (ICLR), 2025</li>
                     <li>AAAI Conference on Artificial Intelligence, 2023, 2024, 2025</li>
                     <li>IEEE Transactions on Affective Computing (TAFFC) </li>
                     <li>IEEE Transactions on Artificial Intelligence (TAI) </li>
