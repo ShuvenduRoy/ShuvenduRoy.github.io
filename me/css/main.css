@@ -20,3 +20,17 @@
 .al_right{
 	text-align: right;
 }
+
+
+.research-area ul {
+    list-style: none; /* Optional: Remove default bullet points */
+    padding-left: 0; /* Align the main list to the left */
+}
+
+.research-area .sub-list {
+    padding-left: 20px; /* Tab the sub-items slightly to the right */
+}
+
+.research-area .sub-list li {
+    margin-top: 5px; /* Optional: Add some spacing between sub-items */
+}
