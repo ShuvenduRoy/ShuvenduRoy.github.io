@@ -958,6 +958,58 @@
 
 
 
+                    <tr onmouseout="aaai25_stop()" onmouseover="aaai25_start()" bgcolor="#ffffff">
+                        <td style="width:25%; vertical-align:center">
+                            <div class="one">
+                                <div class="two" id='aaai25_image'>
+                                    <img src="img/aaai25_2.png" id="aaai25_img_2" width="200">
+                                </div>
+                                <img src='img/aaai25_1.png' id="aaai25_img_1" width="200">
+                            </div>
+                            <script type="text/javascript">
+                                function aaai25_start() {
+                                    document.getElementById('aaai25_image').style.opacity = "1";
+                                    document.getElementById('aaai25').style.display = 'block';
+                                    document.getElementById('aaai25_img_1').style.opacity = "0";
+                                    document.getElementById('aaai25_tldr').style.display = 'none';
+
+                                }
+
+                                function aaai25_stop() {
+                                    document.getElementById('aaai25_image').style.opacity = "0";
+                                    document.getElementById('aaai25').style.display = "none";
+                                    document.getElementById('aaai25_img_1').style.opacity = "1";
+                                    document.getElementById('aaai25_tldr').style.display = 'block';
+
+                                }
+
+                                aaai25_stop()
+                            </script>
+                        </td>
+                        <td style="width:75% ;vertical-align:top">
+                            <a href="https://arxiv.org/abs/2409.01227" style="text-decoration: None">
+                                <strong>Prompt Compression with Context-Aware Sentence Encoding for Fast and Improved LLM Inference</strong>
+                            </a>
+                            <br><br>
+                            Barys Liskavets, Maxim Ushakov, <strong>Shuvendu Roy</strong>, Mark Klibanov, Ali Etemad, Shane Luke
+                            <br>
+                            AAAI Conference on Artificial Intelligence (<b>AAAI 2025</b>) <br>
+                            <br>
+
+                            <a style="text-decoration: None" href="https://arxiv.org/pdf/2409.01227" target="_blank">Paper</a> |
+                            <a style="text-decoration: None" href="https://arxiv.org/abs/2409.01227" target="_blank">ArXiv</a> |
+                            <a style="text-decoration: None" href="https://github.com/Workday/cpc"><i class="fab fa-fw fa-github-square" aria-hidden="true"></i> Code</a>
+                            <br><br>
+                            <p style="text-align: left; font-size: .90em;"  id="aaai25_tldr">
+                                <b> TLDR: </b> We propose Context-Aware Prompt Compression (CPC), a sentence-level technique for compressing prompts to reduce computational costs while preserving relevant information for large language models (LLMs). CPC uses a novel context-aware sentence encoder, trained in a contrastive setup, to rank sentence relevance to a given question. It outperforms token-level compression methods on benchmarks, achieving up to 10.93x faster inference and better performance under shorter context constraints.
+                            </p>
+                            <p style="text-align: left; font-size: .90em;" class="hide" id="aaai25">
+                                <b> Abstract: </b> Large language models (LLMs) have triggered a new stream of research focusing on compressing the context length to reduce the computational cost while ensuring the retention of helpful information for LLMs to answer the given question. Token-based removal methods are one of the most prominent approaches in this direction, but risk losing the semantics of the context caused by intermediate token removal, especially under high compression ratios, while also facing challenges in computational efficiency. In this work, we propose context-aware prompt compression (CPC), a sentence-level prompt compression technique where its key innovation is a novel context-aware sentence encoder that provides a relevance score for each sentence for a given question. To train this encoder, we generate a new dataset consisting of questions, positives, and negative pairs where positives are sentences relevant to the question, while negatives are irrelevant context sentences. We train the encoder in a contrastive setup to learn context-aware sentence representations. Our method considerably outperforms prior works on prompt compression on benchmark datasets and is up to 10.93x faster at inference compared to the best token-level compression method. We also find better improvement for shorter length constraints in most benchmarks, showing the effectiveness of our proposed solution in the compression of relevant information in a shorter context.
+                            </p>
+                        </td>
+                    </tr>
+
+
                     <tr onmouseout="tmlr24_stop()" onmouseover="tmlr24_start()" bgcolor="#ffffff">
                         <td style="width:25%; vertical-align:center">
                             <div class="one">
@@ -1022,7 +1074,6 @@
                             </p>
                         </td>
                     </tr>
-
 
 
                     <tr onmouseout="iclr24_stop()" onmouseover="iclr24_start()" bgcolor="#ffffff">
@@ -1660,6 +1711,19 @@
                     <li>Springer Nature Artificial Intelligence Review, 2022</li>
 <!--                    <li><a href="https://publons.com/researcher/4948440/shuvendu-roy/">Publons Profile</a></li>-->
                     <li><a href="https://www.webofscience.com/wos/author/record/3373612">Publons Profile</a></li>
+                </ol>
+                <hr>
+
+                    <br><br>
+                <p align="justify">
+
+
+                <header><h1 class="page__title" itemprop="headline"><i>Awards</i></h1></header>
+                <h3 style="margin-top: -5px; font-size: 1.1em; margin-left: 10px">Reviewing</h3>
+                <ol class="three">
+                    <li>First prize in IEEE Research Excellence Award (PhD) from IEEE Kingston Section 2024</li>
+                    <li>Graduate Student Conference Award, Queens’s University, Canada</li>
+                    <li>Runners Up in ‘System Development Project Competition’, at Khulna University of Engineering & Technology</li>
                 </ol>
                 <hr>
 
